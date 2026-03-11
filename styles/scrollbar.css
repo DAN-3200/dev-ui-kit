@@ -1,0 +1,10 @@
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	background: #f0f0ec;
+}
+::-webkit-scrollbar-thumb {
+	background: #bbb;
+}

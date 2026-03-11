@@ -1,0 +1,13 @@
+/* ── Section label ── */
+.section-tag {
+	display: inline-block;
+	font-family: 'DM Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	border: 1px solid #bbb;
+	background: #fff;
+	color: #666;
+	margin-bottom: 12px;
+}

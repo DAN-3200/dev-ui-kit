@@ -1,0 +1,19 @@
+/* ── Tabs ── */
+.tab-btn {
+	padding: 8px 18px;
+	font-size: 13px;
+	border: 1.5px solid transparent;
+	font-family: 'DM Mono', monospace;
+	cursor: pointer;
+	background: none;
+	color: #888;
+	border-bottom: 2px solid transparent;
+	transition: color 0.15s;
+}
+.tab-btn.active {
+	color: #111;
+	border-bottom: 2px solid #111;
+}
+.tab-btn:hover {
+	color: #333;
+}

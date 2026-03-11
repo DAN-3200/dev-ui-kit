@@ -1,0 +1,37 @@
+/* ── Button Group ── */
+.btn-group {
+	display: inline-flex;
+}
+.btn-group > button {
+	border: 1.5px solid #ddd;
+	background: #fff;
+	padding: 8px 16px;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #444;
+	transition:
+		background 0.12s,
+		color 0.12s,
+		border-color 0.12s;
+	margin-left: -1.5px;
+}
+.btn-group > button:first-child {
+	margin-left: 0;
+}
+.btn-group > button:hover {
+	background: #f5f4f0;
+	color: #111;
+	border-color: #aaa;
+	z-index: 1;
+}
+.btn-group > button.active {
+	background: #111;
+	color: #fff;
+	border-color: #111;
+	z-index: 2;
+}
+.btn-group > button:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}

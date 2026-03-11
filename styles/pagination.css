@@ -1,0 +1,30 @@
+/* ── Pagination ── */
+.page-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 36px;
+	height: 36px;
+	padding: 0 6px;
+	border: 1.5px solid #ddd;
+	background: #fff;
+	font-family: 'DM Mono', monospace;
+	font-size: 13px;
+	cursor: pointer;
+	color: #555;
+	transition: all 0.12s;
+}
+.page-btn:hover {
+	border-color: #111;
+	color: #111;
+}
+.page-btn.active {
+	background: #111;
+	border-color: #111;
+	color: #fff;
+	cursor: default;
+}
+.page-btn:disabled {
+	opacity: 0.35;
+	cursor: not-allowed;
+}

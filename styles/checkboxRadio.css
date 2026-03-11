@@ -1,0 +1,47 @@
+/* ── Checkbox / Radio custom ── */
+.custom-check input[type='checkbox'],
+.custom-radio input[type='radio'] {
+	display: none;
+}
+.check-box {
+	width: 18px;
+	height: 18px;
+	border: 2px solid #111;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	flex-shrink: 0;
+	transition: background 0.1s;
+}
+.custom-check input:checked ~ .check-box {
+	background: #111;
+}
+.custom-check input:checked ~ .check-box::after {
+	content: '';
+	width: 5px;
+	height: 9px;
+	border: 2px solid #fff;
+	border-top: none;
+	border-left: none;
+	transform: rotate(45deg) translateY(-1px);
+}
+.radio-circle {
+	width: 18px;
+	height: 18px;
+	border: 2px solid #111;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	flex-shrink: 0;
+	transition: background 0.1s;
+}
+.custom-radio input:checked ~ .radio-circle::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #111;
+	border-radius: 50%;
+}

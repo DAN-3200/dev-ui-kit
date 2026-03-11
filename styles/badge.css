@@ -1,0 +1,16 @@
+/* ── Badge ── */
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-family: 'DM Mono', monospace;
+	font-size: 11px;
+	padding: 3px 9px;
+	border: 1.5px solid;
+	letter-spacing: 0.04em;
+}
+.badge-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+}

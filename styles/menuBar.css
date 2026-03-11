@@ -1,0 +1,73 @@
+/* ── Menu Bar ── */
+.menubar {
+	display: flex;
+	align-items: stretch;
+	gap: 0;
+	background: #fff;
+	border-bottom: 1.5px solid #ddd;
+}
+.menubar-item {
+	position: relative;
+}
+.menubar-trigger {
+	padding: 7px 14px;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: #333;
+	white-space: nowrap;
+	transition: background 0.1s;
+	display: flex;
+	align-items: center;
+}
+.menubar-trigger:hover,
+.menubar-item.open .menubar-trigger {
+	background: #f0f0ec;
+	color: #111;
+}
+.menubar-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	border: 1.5px solid #111;
+	min-width: 190px;
+	z-index: 80;
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.07);
+}
+.menubar-item.open .menubar-menu {
+	display: block;
+}
+.mb-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 7px 14px;
+	font-size: 13px;
+	cursor: pointer;
+	color: #222;
+	transition: background 0.1s;
+	white-space: nowrap;
+}
+.mb-item:hover {
+	background: #f5f4f0;
+}
+.mb-item.disabled {
+	opacity: 0.4;
+	pointer-events: none;
+}
+.mb-shortcut {
+	margin-left: auto;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 10px;
+	color: #bbb;
+	padding-left: 20px;
+}
+.mb-separator {
+	height: 1.5px;
+	background: #eee;
+	margin: 3px 0;
+}

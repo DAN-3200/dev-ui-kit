@@ -1,0 +1,11 @@
+/* ── Copy feedback ── */
+.copy-btn {
+	transition:
+		background 0.15s,
+		color 0.15s;
+	cursor: pointer;
+}
+.copy-btn.copied {
+	background: #111 !important;
+	color: #f5f4f0 !important;
+}

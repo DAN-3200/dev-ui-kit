@@ -1,0 +1,27 @@
+/* ── Component card ── */
+.component-card {
+	background: #fff;
+	border: 1.5px solid #ddd;
+	overflow: visible;
+}
+.component-preview {
+	padding: 36px 28px;
+	border-bottom: 1.5px solid #e8e8e8;
+	background: #fafaf8;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+.component-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 16px;
+	background: #fff;
+}
+.component-name {
+	font-size: 13px;
+	font-family: 'DM Mono', monospace;
+	color: #888;
+}

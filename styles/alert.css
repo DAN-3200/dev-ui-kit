@@ -1,0 +1,6 @@
+/* ── Alert ── */
+.alert {
+	border-left: 4px solid;
+	padding: 12px 16px;
+	font-size: 14px;
+}

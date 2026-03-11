@@ -1,0 +1,19 @@
+/* ── File Input ── */
+.file-drop {
+	border: 2px dashed #ccc;
+	padding: 28px 20px;
+	text-align: center;
+	cursor: pointer;
+	transition:
+		border-color 0.15s,
+		background 0.15s;
+	background: #fafaf8;
+}
+.file-drop:hover,
+.file-drop.dragover {
+	border-color: #111;
+	background: #f0f0ec;
+}
+.file-input-hidden {
+	display: none;
+}

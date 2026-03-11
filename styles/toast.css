@@ -1,0 +1,130 @@
+/* ── Sonner / Toast ── */
+#sonner-stack {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 8px;
+	z-index: 300;
+	pointer-events: none;
+}
+.toast {
+	pointer-events: all;
+	background: #fff;
+	border: 1.5px solid #ddd;
+	padding: 12px 16px;
+	min-width: 300px;
+	max-width: 380px;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	animation: toastIn 0.22s ease both;
+	position: relative;
+	overflow: hidden;
+}
+.toast::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+}
+.toast.toast-default::before {
+	background: #111;
+}
+.toast.toast-success::before {
+	background: #16a34a;
+}
+.toast.toast-error::before {
+	background: #dc2626;
+}
+.toast.toast-warning::before {
+	background: #ca8a04;
+}
+.toast.toast-info::before {
+	background: #2563eb;
+}
+.toast-icon {
+	flex-shrink: 0;
+	margin-top: 1px;
+}
+.toast-body {
+	flex: 1;
+}
+.toast-title {
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 1px;
+}
+.toast-desc {
+	font-size: 12px;
+	color: #666;
+	font-family: 'JetBrains Mono', monospace;
+}
+.toast-close {
+	flex-shrink: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #bbb;
+	font-size: 16px;
+	line-height: 1;
+	padding: 0;
+	color: #111;
+}
+.toast-action {
+	margin-top: 8px;
+}
+.toast-action button {
+	font-size: 11px;
+	font-weight: 600;
+	border: 1.5px solid #111;
+	background: none;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-family: 'Inter', sans-serif;
+}
+.toast-action button:hover {
+	background: #111;
+	color: #fff;
+}
+.toast-progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	background: currentColor;
+	opacity: 0.3;
+	animation: toastProgress var(--duration, 4s) linear forwards;
+}
+@keyframes toastIn {
+	from {
+		opacity: 0;
+		transform: translateX(20px) scale(0.97);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes toastOut {
+	to {
+		opacity: 0;
+		transform: translateX(20px) scale(0.97);
+		max-height: 0;
+		padding: 0;
+		margin: 0;
+		border-width: 0;
+	}
+}
+@keyframes toastProgress {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0%;
+	}
+}

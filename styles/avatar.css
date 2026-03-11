@@ -1,0 +1,13 @@
+/* ── Avatar ── */
+.avatar {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #e5e5e5;
+	border: 2px solid #ddd;
+	font-family: 'DM Mono', monospace;
+	font-size: 13px;
+	font-weight: 500;
+	color: #555;
+	flex-shrink: 0;
+}
